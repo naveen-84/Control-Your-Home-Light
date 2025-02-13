@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Automation Control</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Control Your Home Light</h1>
+      <div class="controls">
+        <div class="lights">
+          <div class="light">
+            <input type="checkbox" id="light-1" class="light-checkbox" />
+            <label for="light-1">BedRoom</label>
+            <div class="toggle-options">
+              <input
+                type="radio"
+                id="light-1-on"
+                name="light-1"
+                value="ON"
+                disabled
+              />
+              <label for="light-1-on">ON</label>
+              <input
+                type="radio"
+                id="light-1-off"
+                name="light-1"
+                value="OFF"
+                disabled
+              />
+              <label for="light-1-off">OFF</label>
+            </div>
+            <span class="status-indicator" id="indicator-1"></span>
+          </div>
+          <div class="light">
+            <input type="checkbox" id="light-2" class="light-checkbox" />
+            <label for="light-2">Kitchen</label>
+            <div class="toggle-options">
+              <input
+                type="radio"
+                id="light-2-on"
+                name="light-2"
+                value="ON"
+                disabled
+              />
+              <label for="light-2-on">ON</label>
+              <input
+                type="radio"
+                id="light-2-off"
+                name="light-2"
+                value="OFF"
+                disabled
+              />
+              <label for="light-2-off">OFF</label>
+            </div>
+            <span class="status-indicator" id="indicator-2"></span>
+          </div>
+          <div class="light">
+            <input type="checkbox" id="light-3" class="light-checkbox" />
+            <label for="light-3">StudyRoom</label>
+            <div class="toggle-options">
+              <input
+                type="radio"
+                id="light-3-on"
+                name="light-3"
+                value="ON"
+                disabled
+              />
+              <label for="light-3-on">ON</label>
+              <input
+                type="radio"
+                id="light-3-off"
+                name="light-3"
+                value="OFF"
+                disabled
+              />
+              <label for="light-3-off">OFF</label>
+            </div>
+            <span class="status-indicator" id="indicator-3"></span>
+          </div>
+          <div class="light">
+            <input type="checkbox" id="light-4" class="light-checkbox" />
+            <label for="light-4">Gate</label>
+            <div class="toggle-options">
+              <input
+                type="radio"
+                id="light-4-on"
+                name="light-4"
+                value="ON"
+                disabled
+              />
+              <label for="light-4-on">ON</label>
+              <input
+                type="radio"
+                id="light-4-off"
+                name="light-4"
+                value="OFF"
+                disabled
+              />
+              <label for="light-4-off">OFF</label>
+            </div>
+            <span class="status-indicator" id="indicator-4"></span>
+          </div>
+        </div>
+        <button id="send-signal" disabled>SEND SIGNAL</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
